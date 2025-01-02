@@ -1,3 +1,4 @@
+import PhotoGrid from '../../share/PhotoGrid';
 import './About.css';
 
 
@@ -7,7 +8,7 @@ const About = () => {
         <div className='about-top'>
             <h2>About</h2>
             <p>A glimpse into me.</p>
-
+            <PhotoGrid/>
             <div className='about-postcard'>
 
             </div>

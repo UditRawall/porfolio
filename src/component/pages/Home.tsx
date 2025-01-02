@@ -2,7 +2,7 @@ import axios from "axios";
 import { INavLink } from "../share/Navbar";
 import ProjectList from "../share/ProjectList";
 import "./Home.css";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 const links = [
   { name: "LinkedIn", path: "https://www.linkedin.com/" },
