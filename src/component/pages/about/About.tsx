@@ -1,5 +1,7 @@
 import PhotoGrid from '../../share/PhotoGrid';
 import './About.css';
+import AboutSection from './temp/AboutSection';
+import ConnectSection from './temp/ConnectSection';
 
 
 const About = () => {
@@ -12,6 +14,8 @@ const About = () => {
             <div className='about-postcard'>
 
             </div>
+        <AboutSection/>
+        <ConnectSection/>
         </div>
     </section>
   )

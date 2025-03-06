@@ -29,7 +29,7 @@
     -moz-backface-visibility: hidden;
   }
   .flip-card-inner img{
-    height: 300px;
+    height: 250px;
     width: 250px;
     border-radius: 1.25rem;
     border: 2px solid #eee;
@@ -81,21 +81,29 @@
     position: relative;
   }
   .flip-card-back img{
-    height: 300px;
+    height: 250px;
     width: 220px;
     border-radius: 1.25rem;
     border: 2px solid #eee;
   }
-  h3 ,p {
+  
+  .flip-card-back p{
     color: #eee !important;
     z-index: 10;
     position: absolute;
     }
-  h3{
+  .flip-card-back h3{
     font-size: 1rem;
+    color: #eee !important;
+    z-index: 10;
+    position: absolute;
     left: 10;
     top: 50%;
     font-weight: 600;
   }  
   
-  
+  @media (max-width:800px){
+    .flip-card:nth-child(even){
+      display: none;
+    }
+  }

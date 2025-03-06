@@ -10,7 +10,7 @@ export type IPhotoGrid = {
 const PhotoGrid = () => {
   return (
     <section className="photo-main">
-        {photoGridData.map((item, index) => {
+        {photoGridData.map((item) => {
             return (
               <div className="flip-card">
             <div className="flip-card-inner">

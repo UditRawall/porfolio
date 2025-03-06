@@ -1,0 +1,24 @@
+.about-main{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 2.25rem;
+    flex-shrink: 0;
+}
+
+.about-main h2{
+    width: 8rem;
+    color: #b4b4b4;
+    font-size: 1rem;
+}
+
+.about-main-right{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.about-main-list{
+    
+}
