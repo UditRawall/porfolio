@@ -1,24 +1,65 @@
 .about-main{
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
     /* align-items: center; */
-    gap: 2.25rem;
+    gap: 2.5rem;
     flex-shrink: 0;
+    ;
 }
 
-.about-main h2{
-    width: 8rem;
+.about-main h3{
+    min-width: 8rem !important;
     color: #b4b4b4;
     font-size: 1rem;
+    font-weight: inherit;
+    margin: 0;
 }
 
 .about-main-right{
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
+    
+}
+.about-main-right p{
+    font-size: 1rem;
+    color: #eee;
+    
 }
 
-.about-main-list{
-    
+@media screen and (max-width:600px) {
+    .about-main{
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-top: 0;
+    }
+}
+
+/* work */
+
+.work-list{
+    list-style: none;
+}
+.xyzasd{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.work-list-item{
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+
+
+/* When hovering over the parent .work-list, dim all items */
+.work-list:hover .xyzasd {
+    opacity: 0.4;
+}
+
+/* Keep the hovered work list item fully visible */
+.xyzasd:hover {
+    opacity: 1 !important;
 }

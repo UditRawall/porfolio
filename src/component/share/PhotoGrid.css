@@ -4,6 +4,9 @@
   justify-content: center;
   align-items: center;
   padding-top: 4rem;
+  position: absolute;
+  top: 0;
+      right: -15%;
 }
 
 .flip-card{
@@ -106,4 +109,28 @@
     .flip-card:nth-child(even){
       display: none;
     }
+    .photo-main{
+      left: 0;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .flip-card-back img{
+      height: 180px;
+      width: 180px;
+    }
+    .flip-card-inner img{
+      height: 180px;
+      width: 180px;
+    }
+    .flip-card-back p{
+      font-size: 1rem;
+    }
+    .flip-card-back h3{
+      font-size: 1rem;
+    }
+    .photo-main{
+      right: 25%;
+    }
+    
   }
