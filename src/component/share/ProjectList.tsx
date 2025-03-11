@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { projectList } from "../constant/projectList";
 import "./ProjectList.css";
 // import { NavLink } from "react-router-dom";
@@ -12,21 +12,31 @@ export type IProjectLink = {
 
 const ProjectList = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  console.log(hoveredIndex);
+  const dotRefs = useRef<(HTMLDivElement | null)[]>([]);
 
-  const handleHoveredEffect = (e: any) => {
-    const rect = e.target.getBoundingClientRect();
+  // Initialize refs array when project list changes
+  useEffect(() => {
+    dotRefs.current = dotRefs.current.slice(0, projectList.length);
+  }, []);
+
+  const handleHoveredEffect = (e: React.MouseEvent<HTMLDivElement>, index: number) => {
+    const element = e.currentTarget;
+    const rect = element.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
-
-    e.target.style.setProperty("--x", `${x}px`);
-    e.target.style.setProperty("--y", `${y}px`);
+    
+    const dotElement = dotRefs.current[index];
+    if (dotElement) {
+      dotElement.style.setProperty("--x", `${x}px`);
+      dotElement.style.setProperty("--y", `${y}px`);
+    }
   };
+  
   return (
     <div className="project-section-main">
-      <ul className="project-section-list">
+      <ul className="project-section-main-list">
         {projectList.map((item: IProjectLink, index) => (
-          <li key={index}>
+          <li key={index} className="project-section-list">
             {/* <NavLink to={item.path} className='Navlink'> */}
               <div
                 className={`project-details ${
@@ -34,13 +44,14 @@ const ProjectList = () => {
                 }`}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
+                onMouseMove={(e) => handleHoveredEffect(e, index)}
               >
-                <div
-                  className="image-section"
-                  onMouseMove={(e) => handleHoveredEffect(e)}
-                >
-                  <div className="hovered-dot"></div>
-                  <img src={item.image} />
+                <div className="image-section">
+                  <div 
+                    ref={el => dotRefs.current[index] = el}
+                    className="hovered-dot"
+                  ></div>
+                  <img src={item.image} alt={item.name} />
                 </div>
                 <h2>{item.name}</h2>
                 <p>{item.description}</p>
