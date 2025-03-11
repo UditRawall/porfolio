@@ -1,7 +1,8 @@
-import axios from "axios";
+// import axios from "axios";
 import { INavLink } from "../share/Navbar";
 import ProjectList from "../share/ProjectList";
 import "./Home.css";
+// import { useEffect } from "react";
 // import { useEffect } from "react";
 
 const links = [
@@ -27,22 +28,22 @@ const Home = () => {
     ></path>
   </svg>);
 
-  const blogApi = async() => {
-    try {
-      const res = await axios.get('https://article-extractor2.p.rapidapi.com/article/parse?url=https%3A%2F%2Fcss-tricks.com%2Fempathetic-animation%2F&word_per_minute=300&desc_truncate_len=210&desc_len_min=180&content_len_min=200',{
-        headers:{
-          'x-rapidapi-key': '21cea513b7mshbd65264e75dff77p1a6f3ajsnef07c6c65bb0',
-          'x-rapidapi-host': 'article-extractor2.p.rapidapi.com'
-        }
-      });
+  // const blogApi = async() => {
+  //   try {
+  //     const res = await axios.get('https://article-extractor2.p.rapidapi.com/article/parse?url=https%3A%2F%2Fcss-tricks.com%2Fempathetic-animation%2F&word_per_minute=300&desc_truncate_len=210&desc_len_min=180&content_len_min=200',{
+  //       headers:{
+  //         'x-rapidapi-key': '21cea513b7mshbd65264e75dff77p1a6f3ajsnef07c6c65bb0',
+  //         'x-rapidapi-host': 'article-extractor2.p.rapidapi.com'
+  //       }
+  //     });
 
-      console.log(res.data.data);
-    } catch (error) {
-      console.log(error);
-    }
-  }
+  //     console.log(res.data.data);
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // }
 
-  blogApi();
+  // blogApi();
 
   // useEffect(()=>{
   //   blogApi();
