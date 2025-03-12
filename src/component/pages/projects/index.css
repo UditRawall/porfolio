@@ -1,0 +1,31 @@
+.home-main-projects{
+    max-width: 700px;
+    margin: 0 auto;
+    padding-inline: 1rem;
+    margin-top: 3rem;
+    padding-bottom: 5rem;
+}
+
+.home-main-projects h2{
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -.025em;
+
+}
+.home-main-projects p{
+    font-size: 1rem;
+    padding-right: 3rem;
+    font-weight:400;
+    -webkit-font-smoothing: antialiased;
+    line-height: inherit;
+    /* letter-spacing: em; */
+    color: #b4b4b4;
+    /* line-height:1.25rem; */
+    /* font-weight: 700; */
+    letter-spacing: -.025em;
+}
+
+.project-details-image img{
+    width: 30rem;
+    height: 18rem;
+}

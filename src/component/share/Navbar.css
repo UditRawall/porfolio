@@ -57,6 +57,9 @@
     .navbar-ul{
         padding: 0;
     }
+    .navbar{
+        margin-top: 0rem;
+    }
    
 }
 @media(max-width : 580px){

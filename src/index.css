@@ -3,6 +3,15 @@
 @tailwind utilities;
 
 /* ... */
+@import url('https://geist-fonts.vercel.app/geist.css');
+
+body {
+    font-family: 'Geist Sans', sans-serif;
+}
+
+code {
+    font-family: 'Geist Mono', monospace;
+}
 
 
 :root {
