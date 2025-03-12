@@ -1,7 +1,8 @@
 import { useState, useRef, useEffect } from "react";
 import { projectList } from "../constant/projectList";
 import "./ProjectList.css";
-// import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 
 export type IProjectLink = {
   name: string;
@@ -18,6 +19,8 @@ const ProjectList = () => {
   useEffect(() => {
     dotRefs.current = dotRefs.current.slice(0, projectList.length);
   }, []);
+
+  // Handle mouse hover effect
 
   const handleHoveredEffect = (e: React.MouseEvent<HTMLDivElement>, index: number) => {
     const element = e.currentTarget;
@@ -37,7 +40,7 @@ const ProjectList = () => {
       <ul className="project-section-main-list">
         {projectList.map((item: IProjectLink, index) => (
           <li key={index} className="project-section-list">
-            {/* <NavLink to={item.path} className='Navlink'> */}
+            <Link to={item.path} className='Navlink'>
               <div
                 className={`project-details ${
                   hoveredIndex === index ? "highlight" : "dim"
@@ -56,7 +59,7 @@ const ProjectList = () => {
                 <h2>{item.name}</h2>
                 <p>{item.description}</p>
               </div>
-            {/* </NavLink> */}
+            </Link>
           </li>
         ))}
       </ul>

@@ -3,6 +3,7 @@ import Navbar from './component/share/Navbar';
 import './index.css';
 import Home from './component/pages/Home';
 import About from './component/pages/about/About';
+import Piclure from './component/pages/projects/Piclure';
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
   <Routes>
     <Route path="/" element={<Home/>} />
     <Route path="/about" element={<About/>} />
-    <Route path="/contact" element={<div>Contact Page</div>} />
+    <Route path="/piclure" element={<Piclure/>} />
   </Routes>
 </BrowserRouter>
   )
