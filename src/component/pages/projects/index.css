@@ -25,7 +25,29 @@
     letter-spacing: -.025em;
 }
 
+.project-details-image{
+    /* position: absolute; */
+    background-color: #282727;
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:1rem;
+    margin-top: 3rem;
+    /* width: 50rem; */
+}
+
 .project-details-image img{
-    width: 30rem;
-    height: 18rem;
+    width: 100%;
+    height: 100%;
+    /* margin: 0 auto; */
+}
+
+.project-span{
+    width: 70%;
+    font-size: 0.85rem;
+    
+    margin: 1rem auto;
+    text-align: center;
+    color: #5a5757;
 }

@@ -1,3 +1,5 @@
+import { Input } from "../../../components/ui/input";
+import { Button } from "../../../components/ui/button"
 import ProfileCard from "../../../component/share/ProfileCard";
 import './index.css';
 
@@ -14,6 +16,7 @@ const Piclure = () => {
       <ProfileCard />
 
       <h3>About the Project</h3>
+    
 
       <p>
         This project was created to provide a comprehensive and interactive
@@ -26,7 +29,7 @@ const Piclure = () => {
       <div className="project-details-image">
         <img src="src/assets/piclure.png" alt="piclure" />
       </div>
-      <span>Tablet view of the dashboard's home page. The application is designed to be responsive to all platforms and devices.</span>
+      <span className="project-span">Desktop view of the dashboard's home page. The application is designed to be responsive to all platforms and devices.</span>
 
       <h3>Mobile first design</h3>
       <p>I designed the dashboard with a mobile-first approach, ensuring that the application was responsive to all platforms and viewports. Thankfully plotly and Mapbox are already mobile responsive to multi touch interactions so it was just a matter of ensuring the overall layout was adaptable.</p>
@@ -34,6 +37,25 @@ const Piclure = () => {
       <div className="project-details-image">
         <img src="src/assets/piclure-mobile.png" alt="piclure" />
       </div>
+      <span className="project-span">Mobile view of the dashboard's home page. The application is designed to be responsive to all platforms and devices.</span>
+      <h3>Read more</h3>
+    
+
+      <p>
+        Here is a blog post I wrote about the project.
+      </p>
+
+      <h4>Contact</h4>
+    
+
+      <p>
+      Questions or need more details? Ping me on <a href="/linkedin">LinkedIn</a>, or any of my other social media links.
+      </p>
+
+      <div className="flex w-full max-w-sm items-center space-x-2">
+      <Input type="email" placeholder="Email" />
+      <Button type="submit">Subscribe</Button>
+    </div>
     </div>
   );
 };
