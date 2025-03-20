@@ -4,6 +4,7 @@ import './index.css';
 import Home from './component/pages/Home';
 import About from './component/pages/about/About';
 import Piclure from './component/pages/projects/Piclure';
+import { ProjectEikomp } from './component/pages/projects/ProjectEikomp';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
     <Route path="/" element={<Home/>} />
     <Route path="/about" element={<About/>} />
     <Route path="/piclure" element={<Piclure/>} />
+    <Route path="/eikomp" element={<ProjectEikomp/>} />
   </Routes>
 </BrowserRouter>
   )
