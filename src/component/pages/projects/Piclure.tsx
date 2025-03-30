@@ -27,7 +27,7 @@ const Piclure = () => {
         world.
       </p>
       <div className="project-details-image">
-        <img src="public/piclure.png" alt="piclure" />
+        <img src="/piclure.png" alt="piclure" />
       </div>
       <span className="project-span">Desktop view of the dashboard's home page. The application is designed to be responsive to all platforms and devices.</span>
 
