@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 /* ... */
-@import "@fontsource/roboto-mono"; 
+/* @import "@fontsource/roboto-mono"; 
 @import "@fontsource/roboto-mono/400.css"; 
-@import "@fontsource/roboto-mono/400-italic.css";
+@import "@fontsource/roboto-mono/400-italic.css"; */
 
 body {
     font-family: 'Geist Sans', sans-serif;
