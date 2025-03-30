@@ -27,7 +27,7 @@ const Piclure = () => {
         world.
       </p>
       <div className="project-details-image">
-        <img src="public/piclure.png" alt="piclure" />
+        <img src="src\assets\images\piclure.png" alt="piclure" />
       </div>
       <span className="project-span">Desktop view of the dashboard's home page. The application is designed to be responsive to all platforms and devices.</span>
 
@@ -35,7 +35,7 @@ const Piclure = () => {
       <p>I designed the dashboard with a mobile-first approach, ensuring that the application was responsive to all platforms and viewports. Thankfully plotly and Mapbox are already mobile responsive to multi touch interactions so it was just a matter of ensuring the overall layout was adaptable.</p>
     
       <div className="project-details-image">
-        <img src="public/piclure-mobile.png" alt="piclure" />
+        <img src="src\assets\images\piclure-mobile.png" alt="piclure" />
       </div>
       <span className="project-span">Mobile view of the dashboard's home page. The application is designed to be responsive to all platforms and devices.</span>
       <h3>Read more</h3>
