@@ -1,24 +1,33 @@
+import football from '../../assets/images/about/footbal.jpeg';
+import delhi from '../../assets/images/about/delhi.jpg';
+import bike from '../../assets/images/about/bike.jpg';
+import random from '../../assets/images/about/random.jpg';
+import backside from '../../assets/images/about/backside.jpg';
+
+
+
+
 const photoGridData = [
   { date: '19-1-2024',
-    img: "src/assets/images/about/footbal.jpeg",
+    img: {football},
     name:'football',
-    backside:"src/assets/images/about/backside.jpg"
+    backside:{backside}
   },
   { date: '14-11-2024',
-    img: "src/assets/images/about/delhi.jpg",
+    img: {delhi},
     name:'Delhi - bangla Sahib',
-    backside:"src/assets/images/about/backside.jpg"
+    backside:{backside}
     
   },
   { date: '23-06-2024',
-    img: "src/assets/images/about/bike.jpg",
+    img: {bike},
     name:'Bike Ride',
-    backside:"src/assets/images/about/backside.jpg"
+    backside:{backside}
   },
   { date: '14-11-2024',
-    img: "src/assets/images/about/random.jpg",
+    img: {random},
     name:'Delhi - bangla Sahib',
-    backside:"src/assets/images/about/backside.jpg"
+    backside:{backside}
   },
 ];
 
