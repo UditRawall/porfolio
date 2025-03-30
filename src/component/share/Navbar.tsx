@@ -1,5 +1,5 @@
 import { NavLink, useLocation} from "react-router-dom";
-import logo from '../../../public/logo.png';
+import logo from '../../../public/images/logo.png';
 import navLinks from "../constant/navLink";
 import "./Navbar.css";
 
