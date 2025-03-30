@@ -51,7 +51,7 @@ export const ProjectEikomp = () => {
         world.
       </p>
       <div className="project-details-image" style={{ paddingBottom: "0rem" }}>
-        <img src="public/eikomp_assets/desktop.png" alt="piclure" />
+        <img src="src\assets\images\eikomp_assets\desktop.png" alt="piclure" />
       </div>
       <span className="project-span">
         Desktop view of the dashboard's home page. The application is designed
@@ -68,7 +68,7 @@ export const ProjectEikomp = () => {
       </p>
 
       <div className="project-details-image">
-        <img src="public/eikomp_assets/eikomp_mobile.png" alt="piclure" />
+        <img src="src\assets\images\eikomp_assets\eikomp_mobile.png" alt="piclure" />
       </div>
       <span className="project-span">
         Mobile view of the dashboard's home page. The application is designed to
