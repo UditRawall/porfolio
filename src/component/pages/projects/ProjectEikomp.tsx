@@ -1,4 +1,6 @@
 import ProfileCard from "../../../component/share/ProfileCard";
+import EikompDesktop from "../../../assets/images/eikomp_assets/desktop.png";
+import Eikompmobile from "../../../assets/images/eikomp_assets/eikomp_mobile.png";
 import "./index.css";
 
 export const ProjectEikomp = () => {
@@ -51,7 +53,7 @@ export const ProjectEikomp = () => {
         world.
       </p>
       <div className="project-details-image" style={{ paddingBottom: "0rem" }}>
-        <img src="src\assets\images\eikomp_assets\desktop.png" alt="piclure" />
+        <img src={EikompDesktop} alt="piclure" />
       </div>
       <span className="project-span">
         Desktop view of the dashboard's home page. The application is designed
@@ -68,7 +70,7 @@ export const ProjectEikomp = () => {
       </p>
 
       <div className="project-details-image">
-        <img src="src\assets\images\eikomp_assets\eikomp_mobile.png" alt="piclure" />
+        <img src={Eikompmobile} alt="piclure" />
       </div>
       <span className="project-span">
         Mobile view of the dashboard's home page. The application is designed to
