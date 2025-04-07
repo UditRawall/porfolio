@@ -13,20 +13,22 @@ const links = [
 ];
 
 const Home = () => {
-  const arrowSvg = (<svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 20 20"
-    fill="currentColor"
-    aria-hidden="true"
-    data-slot="icon"
-    style={{height:"1rem",width:'1rem',verticalAlign:'middle'}}
-  >
-    <path
-      fill-rule="evenodd"
-      d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z"
-      clip-rule="evenodd"
-    ></path>
-  </svg>);
+  const arrowSvg = (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 20 20"
+      fill="currentColor"
+      aria-hidden="true"
+      data-slot="icon"
+      style={{ height: "1rem", width: "1rem", verticalAlign: "middle" }}
+    >
+      <path
+        fill-rule="evenodd"
+        d="M5.22 14.78a.75.75 0 0 0 1.06 0l7.22-7.22v5.69a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-.75-.75h-7.5a.75.75 0 0 0 0 1.5h5.69l-7.22 7.22a.75.75 0 0 0 0 1.06Z"
+        clip-rule="evenodd"
+      ></path>
+    </svg>
+  );
 
   // const blogApi = async() => {
   //   try {
@@ -56,16 +58,15 @@ const Home = () => {
           <div className="home-intro-data">
             <h1>hey, Udit here!</h1>
             <p>
-              I'm a software engineer in NYC building for the web with a
-              design-first mindset. On the side, I create beautiful websites and
-              softwares to make life easier.
+              I'm a passionate Frontend Developer crafting web experiences with
+              a design-first mindset. On the side, I create beautiful websites
+              and softwares to make life easier.
             </p>
           </div>
           <div className="home-intro-links">
             {links.map((link: INavLink, index) => (
               <a href={link.path} key={index}>
-                {link.name}{" "}
-                {arrowSvg}
+                {link.name} {arrowSvg}
               </a>
             ))}
           </div>
@@ -73,25 +74,26 @@ const Home = () => {
 
         {/* project */}
         <div className="home-project-section">
-            <p>Pinned</p>
+          <p>Pinned</p>
 
-            <ProjectList/>
-
+          <ProjectList />
         </div>
-        
+
         {/* Latest Blog */}
 
         <div className="home-blog-section">
-            <p>Latest Blog {""}{arrowSvg}</p>
+          <p>
+            Latest Blog {""}
+            {arrowSvg}
+          </p>
 
-            <p>I occasionally write about programming, productivity, and more. Check me out and subscribe to stay up to date.</p>
+          <p>
+            I occasionally write about programming, productivity, and more.
+            Check me out and subscribe to stay up to date.
+          </p>
 
-            <div>
-              {/* blog navs */}
-            </div>            
-
+          <div>{/* blog navs */}</div>
         </div>
-
       </div>
     </div>
   );
