@@ -58,9 +58,9 @@ const Home = () => {
           <div className="home-intro-data">
             <h1>hey, Udit here!</h1>
             <p>
-              I'm a passionate Frontend Developer crafting web experiences with
-              a design-first mindset. On the side, I create beautiful websites
-              and softwares to make life easier.
+              I create lightning-fast,
+              responsive web apps with a design-first mindset—turning complex
+              ideas into seamless user experiences.
             </p>
           </div>
           <div className="home-intro-links">
