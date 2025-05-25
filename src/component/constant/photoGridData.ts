@@ -16,7 +16,7 @@ const photoGridData: PhotoGridItem[] = [
   {
     date: '19-1-2024',
     img: football, // Directly assign the image import
-    name: 'Football',
+    name: 'Football.JPG',
     backside: backside
   },
   {
@@ -28,13 +28,13 @@ const photoGridData: PhotoGridItem[] = [
   {
     date: '23-06-2024',
     img: bike,
-    name: 'Bike Ride',
+    name: 'Bike_Ride.PNG',
     backside: backside
   },
   {
     date: '14-11-2024',
     img: random,
-    name: 'Random Image',
+    name: 'LITTLE_GIRL.jpg',
     backside: backside
   },
 ];
