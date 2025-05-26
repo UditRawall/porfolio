@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 /* ... */
 /* @import "@fontsource/roboto-mono"; 
@@ -27,4 +25,11 @@ code {
 
   
 }
-
+.root{
+  max-width: 600px !important;
+    margin: 0 auto;
+    padding-inline: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    
+}

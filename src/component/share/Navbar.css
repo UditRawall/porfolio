@@ -4,45 +4,74 @@
     margin-inline: auto;
     display: flex;
     flex-direction: row;
-
     justify-content: space-between;
     align-items: center;
     padding-inline: 1rem;
 }
+
 .logo{
     width: 2rem;
     height: 2rem;
     cursor: pointer;
 }
+
+.navbar-container{
+    /* background-color: #1a1a1a; */
+    border-radius: 0.75rem;
+    padding: 0.25rem;
+}
+
 .navbar-ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    justify-content: center;
     list-style: none;
-    
     gap: 1rem;
+    position: relative;
+}
+
+.navbar-list{
+    position: relative;
+    z-index: 2;
 }
 
 .navbar-list a{
-    color: #b4b4b4 ;
+    color: #b4b4b4;
     text-decoration: none;
     font-size: .875rem;
     line-height: 1.25rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0.375rem .75rem;
+    border-radius: .5rem;
+    transition: color 0.3s ease;
+    position: relative;
+    white-space: nowrap;
 }
 
 .active{
     color: white !important;
-    background-color:#222 ;
-    padding: 0.375rem .75rem;
-    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
-    transition-duration: .15s;
-    border-radius: .5rem;
+    /* padding: 0.75rem 0.6rem; */
+}
+
+.navbar-list a:hover:not(.active) {
+    color: #e5e5e5;
+}
+
+/* Sliding background */
+.slider {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    height: calc(100% - 0.5rem);
+    background-color: #222;
+    border-radius: 0.5rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    padding: 0.2rem ;
 }
 
 .dark-theme{
@@ -54,17 +83,23 @@
     .logo{
         display: none;
     }
-    .navbar-ul{
-        padding: 0;
+    .navbar-container{
+        padding: 0.25rem;
     }
     .navbar{
         margin-top: 0rem;
     }
-   
 }
+
 @media(max-width : 580px){
     .navbar{
         margin-top: 0rem;
     }
-   
+    .navbar-ul{
+        gap: 0.5rem;
+    }
+    .navbar-list a{
+        padding: 0.375rem 0.5rem;
+        font-size: 0.8rem;
+    }
 }
