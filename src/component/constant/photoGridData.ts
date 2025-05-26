@@ -34,7 +34,7 @@ const photoGridData: PhotoGridItem[] = [
   {
     date: '14-11-2024',
     img: random,
-    name: 'LITTLE_GIRL.jpg',
+    name: 'MICROSOFT-VISIT.jpg',
     backside: backside
   },
 ];
