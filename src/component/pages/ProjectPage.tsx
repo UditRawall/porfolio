@@ -35,6 +35,7 @@ const ProjectPage = () => {
               className={`category-btn ${selectedCategory === category ? 'active' : ''}`}
               onClick={() => setSelectedCategory(category)}
             >
+              
               {category}
             </button>
           ))}
