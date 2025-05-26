@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { projects, categories } from '../constant/projectList';
 import './ProjectPage.css';
 
@@ -35,6 +35,7 @@ const ProjectPage = () => {
               className={`category-btn ${selectedCategory === category ? 'active' : ''}`}
               onClick={() => setSelectedCategory(category)}
             >
+              
               {category}
             </button>
           ))}
