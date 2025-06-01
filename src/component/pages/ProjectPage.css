@@ -5,6 +5,7 @@
   background-color: #0a0a0a;
   color: #e5e5e5;
   padding: 2rem 1rem;
+  position: relative;
 }
 
 .project-container {
@@ -232,6 +233,49 @@
   transform: translateX(2px);
 }
 
+/* Cursor Image Styles */
+.cursor-image {
+  position: fixed;
+  pointer-events: none;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.2s ease;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+.cursor-image img {
+  width: 300px;
+  height: 200px;
+  /* object-fit: cover; */
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.cursor-image:hover img {
+  transform: scale(0.5) !important;
+}
+
+/* Enhanced cursor image with subtle animation */
+.cursor-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(59, 130, 246, 0.1), rgba(147, 51, 234, 0.1));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover ~ .cursor-image::before {
+  opacity: 1;
+}
+
 /* Footer */
 .project-footer {
   text-align: center;
@@ -279,6 +323,11 @@
     justify-content: center;
     margin-top: 0.5rem;
   }
+
+  /* Hide cursor image on mobile */
+  .cursor-image {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
@@ -303,5 +352,20 @@
     width: auto;
     justify-content: flex-start;
     margin-top: 0;
+  }
+}
+
+/* Smooth transitions for better UX */
+@media (prefers-reduced-motion: no-preference) {
+  .cursor-image {
+    transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .cursor-image {
+    border: 3px solid #ffffff;
+    box-shadow: 0 0 0 1px #000000;
   }
 }

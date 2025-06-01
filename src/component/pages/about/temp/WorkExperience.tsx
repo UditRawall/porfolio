@@ -9,7 +9,7 @@ const experiences = [
   {
     title: "Software Engineer",
     company: "Upwork",
-    logo: "https://cdn.creazilla.com/icons/7913459/upwork-icon-lg.png",
+    logo: "https://images.icon-icons.com/3781/PNG/512/upwork_icon_231982.png",
     duration: "2024 - Present",
   },
   {
@@ -38,7 +38,7 @@ export default function WorkExperience() {
       <h3>Work</h3>
       <div className="flex flex-col gap-8 w-full">
         <p style={{ color: "#fff", fontSize: "1rem" }}>
-          I specialize in Python, data analytics, React, web development, UI/UX,
+          I specialize in JavaScript, TypeScript, Java , data analytics, React, web development, UI/UX,
           and product design. But I am always learning new things. Here are some
           of the places I have worked.
         </p>

@@ -1,5 +1,4 @@
-import { Input } from "../../../components/ui/input";
-import { Button } from "../../../components/ui/button"
+
 import ProfileCard from "../../../component/share/ProfileCard";
 import piclureDesktop from "../../../assets/images/piclure.png";
 import picluremobile from "../../../assets/images/piclure-mobile.png";
@@ -54,10 +53,22 @@ const Piclure = () => {
       Questions or need more details? Ping me on <a href="/linkedin">LinkedIn</a>, or any of my other social media links.
       </p>
 
-      <div className="flex w-full max-w-sm items-center space-x-2">
-      <Input type="email" placeholder="Email" />
-      <Button type="submit">Subscribe to my email</Button>
-    </div>
+      <section className="newsletter">
+          <h2 className="newsletter-title">Newsletter</h2>
+          <p className="newsletter-text">
+            Get personal updates and readings on topics like tech, design, productivity, programming, and more!
+          </p>
+          <div className="newsletter-form">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="newsletter-input"
+            />
+            <button className="newsletter-button" type="button">
+              Subscribe
+            </button>
+          </div>
+        </section>
     </div>
   );
 };

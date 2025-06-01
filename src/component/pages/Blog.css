@@ -152,7 +152,8 @@
   margin-top: 6rem;
   padding: 2rem;
   border-radius: 1rem;
-  background: linear-gradient(135deg, rgba(31, 41, 55, 0.5), rgba(17, 24, 39, 0.5));
+  background-color: #000;
+  /* background: linear-gradient(135deg, rgba(31, 41, 55, 0.5), rgba(17, 24, 39, 0.5)); */
   border: 1px solid rgba(107, 114, 128, 0.3);
   backdrop-filter: blur(8px);
 }
@@ -180,9 +181,7 @@
   margin-bottom: 1.5rem;
 }
 
-.light-theme .newsletter-text {
-  color: #6b7280;
-}
+
 
 .newsletter-form {
   display: flex;
@@ -228,8 +227,8 @@
 
 .newsletter-button {
   padding: 0.75rem 1.5rem;
-  background: linear-gradient(to right, #2563eb, #7c3aed);
-  color: #ffffff;
+  background: #fff;
+  color: #000;
   border: none;
   border-radius: 0.5rem;
   font-weight: 500;

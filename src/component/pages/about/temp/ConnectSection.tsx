@@ -48,7 +48,7 @@ const ConnectSection = () => {
         </li>
         {/* 2nd connect linkedIn */}
         <li className="list-main">
-          <a href="">
+          <a href="https://www.linkedin.com/in/udit-rawal/">
             <span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +100,7 @@ const ConnectSection = () => {
         </li>
         {/* 2nd connect twitter */}
         <li className="list-main">
-          <a href="">
+          <a href="https://x.com/uditrawal209">
             <span>
               <svg
                 stroke="currentColor"

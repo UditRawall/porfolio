@@ -95,7 +95,7 @@
 }
 
 @media (max-width: 768px) {
-  .project-section-list {
+  .project-section-main-list {
     overflow: auto;
     display: flex;
     gap: 2rem;

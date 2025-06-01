@@ -2,7 +2,7 @@ import football from '../../assets/images/about/footbal.jpeg';
 import delhi from '../../assets/images/about/delhi.jpg';
 import bike from '../../assets/images/about/bike.jpg';
 import random from '../../assets/images/about/random.jpg';
-import backside from '../../assets/images/about/backside.jpg';
+import backside from '../../assets/images/about/backside.png';
 
 
 export interface PhotoGridItem {
